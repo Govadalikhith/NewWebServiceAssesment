@@ -25,7 +25,7 @@ async function startServer() {
         app.use(express.static(frontendPath));
 
         // Fallback for SPA (React)
-        app.get('(.*)', (req, res) => {
+        app.get('/*', (req, res) => {
             if (!req.path.startsWith('/api')) {
                 res.sendFile(path.join(frontendPath, 'index.html'));
             }
