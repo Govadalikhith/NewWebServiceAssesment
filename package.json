@@ -4,7 +4,7 @@
   "description": "A production-quality inventory management system with a search-focused UI and a database-backed backend.",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "install-all": "npm install && cd backend && npm install sqlite3 --build-from-source && npm install && cd ../frontend && npm install",
     "build": "cd frontend && npm run build",
     "backend": "cd backend && npm start",
     "frontend": "cd frontend && npm start",
